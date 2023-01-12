@@ -8,7 +8,7 @@ from pandas_profiling import ProfileReport
 st.markdown('''
 # **Exploratory data analysis**
 .Developed by **x,y,z**''')
-with st.sidebar.header("Upload dataset in (csc.file)"):
+with st.sidebar.header("Upload dataset in (csv.file)"):
     uploaded_file = st.sidebar.file_uploader("UPLOAD YOUR FILE",type=['csv'])
     df=sns.load_dataset("titanic")
     st.write(df)
